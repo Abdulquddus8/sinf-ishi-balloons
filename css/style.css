@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2d3e51;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  perspective: 500px;
+}
+.bolt-lines{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-top: 5px solid #00ffff;
+  perspective: 500px;
+  border-radius: 8px;
+}
+.bolt-line{
+  width: 60px;
+  height: 210px;
+  position: relative;
+}
+.lines{
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  width: 4px;
+  height: 150px;
+  transform: translate(-50%,0);
+  background-color: #00ffff;
+}
+.lines-2{
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
+.lines-3{
+  position: absolute;
+  top: 0;
+  left: 120px;
+}
+.lines-4{
+  position: absolute;
+  top: 0;
+  left: 180px;
+}
+.lines-5{
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
+.cicle{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 148px;
+  left: 0px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #0d062f, #0b153d, #023362, #006193, #0096c2, #00cae4, #00f0f5, #2ffffb););
+}
+.lines-1{
+  transform-style: preserve-3d;
+  transform-origin: top;
+  transform:rotate(0deg);
+  /* transform:rotate(30deg); */
+  animation: anime-1 2.5s linear  infinite both;
+}
+@keyframes anime-1 {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(30deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.lines-5{
+  transform-style: preserve-3d;
+  transform-origin: top;
+  transform:rotate(0deg);
+  animation: anime-2 2.5s linear infinite both;
+}
+@keyframes anime-2 {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+
+
+
